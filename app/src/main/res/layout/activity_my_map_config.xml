@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/setting_background"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MySettingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索范围"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MySettingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否显示已停满地点"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:layout_alignParentRight="true"
+            android:id="@+id/sticky_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:ss_animationDuration="600"
+            app:ss_iconPadding="14dp"
+            app:ss_iconSize="14dp"
+            app:ss_leftText="步行"
+            app:ss_rightText="驾车"
+            app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+            app:ss_switchColor="@color/colorSwitchColor"
+            app:ss_textColor="@color/white"
+            app:ss_textSize="16sp"
+            app:ss_selectedTextSize="18sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

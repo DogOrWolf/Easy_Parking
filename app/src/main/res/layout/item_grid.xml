@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PIC1"
+        android:textSize="16sp"/>
+
+    <!--<TextView
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="你见，或者不见,我就在那里. "
+        android:textSize="12sp"/>-->
+    <ImageView
+        android:id="@+id/iv_griditem"
+        android:layout_gravity="center"
+        android:layout_width="192dp"
+        android:layout_height="90dp"
+        android:src="@drawable/spot_small"
+       />
+</LinearLayout>

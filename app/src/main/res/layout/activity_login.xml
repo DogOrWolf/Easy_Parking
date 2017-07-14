@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_text">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+        <TextView
+
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="手机号:"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/ed_login_phone"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="#5c5c5c"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:hint="请输入手机号"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:listDivider">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/text_gray"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="密   码:"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/ed_login_psw"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="#5c5c5c"
+            android:inputType="textPassword"
+            android:layout_height="match_parent"
+            android:hint="请输入密码"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:listDivider"/>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_01"
+        android:textColor="@color/white"
+        android:text="登   陆"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_login_back"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_01"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="返   回"/>
+</LinearLayout>

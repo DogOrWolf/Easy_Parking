@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/my_title_bg"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_user_bg"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/my_user_bg_icon" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_img"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/my_user_default" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tv_user_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_user_icon"
+                    android:gravity="center"
+                    android:text="哈喽喽喽"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="学习提示:"
+                android:textColor="@color/product_red_common" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="易车位是以服务大众为目的的车位车辆检测系统"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="易车位是建立在自己创建的车位数据库之上的，实现实时监测路边停车位车位情况、车辆定位和车位导航等功能，解决大家停车位难找的问题"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_recharge_bg" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_withdraw_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    style="@style/LoginListStyle"
+                    android:drawableLeft="@drawable/my_invest_manage"
+                    android:text="投资管理" />
+
+                <TextView
+                    style="@style/LoginListStyle"
+                    android:drawableLeft="@drawable/my_reward_manage"
+                    android:text="投资管理" />
+
+                <TextView
+                    style="@style/LoginListStyle"
+                    android:drawableLeft="@drawable/my_asset_manage"
+                    android:text="投资管理" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

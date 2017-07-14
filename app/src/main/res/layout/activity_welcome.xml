@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    android:gravity="center_horizontal"
+    android:id="@+id/rl_welcome"
+    android:paddingBottom="20dp">
+
+    <!--<ImageView-->
+    <!--android:layout_marginTop="60dp"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:src="@drawable/cat_gg"-->
+    <!--/>-->
+    <TextView
+        android:id="@+id/tv_gugejinrong"
+        android:layout_above="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="易车位"
+        android:textSize="25sp"
+        android:textColor="@color/title_text"/>
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_alignRight="@+id/tv_gugejinrong"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号--1.0"
+        android:textSize="14sp"
+        android:textColor="@color/title_text"/>
+</RelativeLayout>
